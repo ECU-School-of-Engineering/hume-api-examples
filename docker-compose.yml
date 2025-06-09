@@ -1,0 +1,28 @@
+# (p-311) ➜  hume-api-examples git:(my_hume) ✗ sudo docker run -it \       
+#   --device /dev/snd \
+#   -e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native \
+#   -v ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native \
+#   -v ~/.config/pulse/cookie:/root/.config/pulse/cookie \
+#   -v /run/user/$(id -u):/run/user/$(id -u) \
+#   --group-add audio \
+#   hume-app bash
+
+version: '3.8'
+
+services:
+  hume:
+    image: hume-app # Use your custom image name
+    command: bash
+    stdin_open: true
+    tty: true
+    environment:
+      PULSE_SERVER: unix:/run/user/1000/pulse/native
+    volumes:
+      - /run/user/1000/pulse/native:/run/user/1000/pulse/native
+      - ~/.config/pulse/cookie:/root/.config/pulse/cookie
+      - /run/user/1000:/run/user/1000
+    devices:
+      - /dev/snd
+    group_add:
+      - audio
+    user: "${UID}:${GID}"
