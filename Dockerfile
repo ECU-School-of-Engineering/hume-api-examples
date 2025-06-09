@@ -1,7 +1,7 @@
-# Usa una imagen base oficial con Python 3.11
+# Base Python 3.11
 FROM python:3.11-slim
 
-# Instala dependencias del sistema necesarias para compilar paquetes y reproducir audio
+# Dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
     libssl-dev \
@@ -12,17 +12,19 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     portaudio19-dev \
     ffmpeg \
+    libpulse0 \
+    alsa-utils \
+    pulseaudio \
     && rm -rf /var/lib/apt/lists/*
 
-# Establece el directorio de trabajo dentro del contenedor
+# app folder
 WORKDIR /app
 
-# Copia tu código fuente al contenedor
+# Copy source to working folder
 COPY . /app
 
-# Instala dependencias si tienes un requirements.txt
-# Descomenta esta línea si es necesario
-# RUN pip install --upgrade pip && pip install -r requirements.txt
+# Install python dependencies requirements.txt
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Comando por defecto (reemplázalo si usas un script específico)
-CMD ["python"]
+# default command
+CMD ["bash"]
