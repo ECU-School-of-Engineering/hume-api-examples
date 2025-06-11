@@ -25,6 +25,13 @@ COPY . /app
 
 # Install python dependencies requirements.txt
 RUN pip install --upgrade pip && pip install -r requirements.txt
+ARG UID=1000
+ARG GID=1000
+RUN groupadd -g ${GID} myuser && \
+    useradd -m -u ${UID} -g ${GID} myuser
+
+# Switch to the new user
+USER myuser
 
 # default command
 CMD ["bash"]

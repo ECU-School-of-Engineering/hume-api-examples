@@ -7,12 +7,16 @@
 #   --group-add audio \
 #   hume-app bash
 
-version: '3.8'
-
 services:
   hume:
-    image: hume-app # Use your custom image name
-    command: bash
+    build:
+      context: .
+      args:
+        UID: ${UID}
+        GID: ${GID}
+    image: hume-app
+    # command: bash
+    command: ["python", "evi/evi-python-quickstart/quickstart_test.py"]
     stdin_open: true
     tty: true
     environment:
@@ -25,4 +29,4 @@ services:
       - /dev/snd
     group_add:
       - audio
-    user: "${UID}:${GID}"
+    # user: "${UID}:${GID}"
