@@ -66,6 +66,7 @@ async def main() -> None:
         await asyncio.create_task(
             MicrophoneInterface.start(
                 socket,
+                device=(12,12),
                 allow_user_interrupt=False,
                 byte_stream=stream
             )
