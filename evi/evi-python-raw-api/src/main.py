@@ -15,7 +15,6 @@ CHANNELS = 1
 SAMPLE_WIDTH = 2  # PyAudio.get_sample_size(pyaudio, format=paInt16)
 CHUNK_SIZE = 1024
 
-
 async def main():
     """
     Main asynchronous function to set up audio devices, authenticate, and connect to the Hume AI websocket.
@@ -23,16 +22,24 @@ async def main():
     # Initialize PyAudio instance
     pyaudio = PyAudio()
     
-    # List available audio input and output devices
-    input_devices, output_devices = AudioDevices.list_audio_devices(pyaudio)
+    # Default: Input
+    default_input_info = pyaudio.get_default_input_device_info()
+    input_device_index = default_input_info["index"]
+    input_device_sample_rate = int(default_input_info["defaultSampleRate"])
+    # Output
+    output_device_index = pyaudio.get_default_output_device_info()["index"]
+    print(f"Default input sample_rate: {input_device_sample_rate}")
+    # #Manual
+    # # List available audio input and output devices
+    # input_devices, output_devices = AudioDevices.list_audio_devices(pyaudio)
     
-    # Choose the audio input device and get its sample rate
-    input_device_index, input_device_sample_rate = AudioDevices.choose_device(
-        input_devices, "input"
-    )
+    # # Choose the audio input device and get its sample rate
+    # input_device_index, input_device_sample_rate = AudioDevices.choose_device(
+    #     input_devices, "input"
+    # )
     
-    # Choose the audio output device
-    output_device_index = AudioDevices.choose_device(output_devices, "output")
+    # # Choose the audio output device
+    # output_device_index = AudioDevices.choose_device(output_devices, "output")
 
     # Open the audio stream with the selected parameters
     audio_stream = pyaudio.open(

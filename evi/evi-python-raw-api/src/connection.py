@@ -19,7 +19,10 @@ executor = ThreadPoolExecutor(max_workers=1)
 
 # Configure logging
 logging.basicConfig(
-    format="%(asctime)s - %(levelname)s - %(message)s", level=logging.DEBUG
+    #format="%(asctime)s - %(levelname)s - %(message)s", level=logging.DEBUG
+    format="%(asctime)s.%(msecs)03d - %(levelname)s - %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+    level=logging.DEBUG
 )
 
 class Connection:
@@ -102,6 +105,8 @@ class Connection:
                     if json_message.get("type") == "audio_output":
                         # Decode the base64 audio data
                         audio_data = base64.b64decode(json_message["data"])
+                        with wave.open(io.BytesIO(audio_data), "rb") as w:
+                            pcm_bytes = w.readframes(w.getnframes())
 
                         # Write the decoded audio data to a temporary file and play it
                         with tempfile.NamedTemporaryFile(delete=True, suffix=".wav") as tmpfile:
