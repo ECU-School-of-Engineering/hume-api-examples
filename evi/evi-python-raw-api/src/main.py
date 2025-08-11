@@ -57,9 +57,16 @@ async def main():
     access_token = get_access_token()
 
     # Construct the websocket URL with the access token
+    # socket_url = (
+    #     "wss://api.hume.ai/v0/assistant/chat?"
+    #     f"access_token={access_token}"
+    # )
+    # Construct the websocket URL with the access token
+    HUME_CONFIG_ID = os.getenv("HUME_CONFIG_ID")
     socket_url = (
-        "wss://api.hume.ai/v0/assistant/chat?"
+        "wss://api.hume.ai/v0/evi/chat?"
         f"access_token={access_token}"
+        f"&config_id={HUME_CONFIG_ID}"
     )
 
     # Connect to the websocket and start the audio stream
@@ -93,6 +100,7 @@ def get_access_token() -> str:
     # Attempt to retrieve API key and Secret key from environment variables
     HUME_API_KEY = os.getenv("HUME_API_KEY")
     HUME_SECRET_KEY = os.getenv("HUME_SECRET_KEY")
+    HUME_CONFIG_ID = os.getenv("HUME_CONFIG_ID")
 
     # Ensure API key and Secret key are set
     if HUME_API_KEY is None or HUME_SECRET_KEY is None:
