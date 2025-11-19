@@ -27,6 +27,7 @@ async def stream_messages_from_openai(
     async for chunk in chat_completion_chunk_stream:
         if custom_session_id:
             chunk.system_fingerprint = custom_session_id
+        print(chunk.model_dump_json(exclude_none=True) + "\n\n")
         yield "data: " + chunk.model_dump_json(exclude_none=True) + "\n\n"
     yield "data: [DONE]\n\n"
 
@@ -62,4 +63,4 @@ async def root(
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8080)

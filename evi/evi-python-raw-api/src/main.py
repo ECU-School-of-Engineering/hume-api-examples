@@ -31,12 +31,10 @@ async def main():
     print(f"Default input sample_rate: {input_device_sample_rate}")
     # #Manual
     # # List available audio input and output devices
-    # input_devices, output_devices = AudioDevices.list_audio_devices(pyaudio)
+    input_devices, output_devices = AudioDevices.list_audio_devices(pyaudio)
     
     # # Choose the audio input device and get its sample rate
-    # input_device_index, input_device_sample_rate = AudioDevices.choose_device(
-    #     input_devices, "input"
-    # )
+    input_device_index, input_device_sample_rate = AudioDevices.choose_device(input_devices, "input")
     
     # # Choose the audio output device
     # output_device_index = AudioDevices.choose_device(output_devices, "output")

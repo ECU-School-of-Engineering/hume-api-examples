@@ -1,0 +1,390 @@
+playsound is relying on another python subprocess. Please use `pip install pygobject` if you want playsound to run more efficiently.
+2025-08-11 13:51:06.189 - DEBUG - Using selector: EpollSelector
+ALSA lib pcm_dsnoop.c:601:(snd_pcm_dsnoop_open) unable to open slave
+ALSA lib pcm_dmix.c:1032:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib confmisc.c:160:(snd_config_get_card) Invalid field card
+ALSA lib pcm_usb_stream.c:482:(_snd_pcm_usb_stream_open) Invalid card 'card'
+ALSA lib confmisc.c:160:(snd_config_get_card) Invalid field card
+ALSA lib pcm_usb_stream.c:482:(_snd_pcm_usb_stream_open) Invalid card 'card'
+ALSA lib pcm_dmix.c:1032:(snd_pcm_dmix_open) unable to open slave
+2025-08-11 13:51:06.418 - DEBUG - Starting new HTTPS connection (1): test-api.hume.ai:443
+2025-08-11 13:51:06.894 - DEBUG - https://test-api.hume.ai:443 "POST /oauth2-cc/token HTTP/1.1" 200 165
+2025-08-11 13:51:06.906 - DEBUG - = connection is CONNECTING
+2025-08-11 13:51:06.916 - DEBUG - > GET /v0/evi/chat?access_token=J8PMo7LUaNpbA2cfMn0KCR65eRgz&config_id=3cbed51f-d17f-4102-a1c2-eb7087fe7e8d HTTP/1.1
+2025-08-11 13:51:06.916 - DEBUG - > Host: api.hume.ai
+2025-08-11 13:51:06.916 - DEBUG - > Upgrade: websocket
+2025-08-11 13:51:06.916 - DEBUG - > Connection: Upgrade
+2025-08-11 13:51:06.916 - DEBUG - > Sec-WebSocket-Key: +TLr12i2vybe+9Yu4uE9Lw==
+2025-08-11 13:51:06.916 - DEBUG - > Sec-WebSocket-Version: 13
+2025-08-11 13:51:06.916 - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-08-11 13:51:06.916 - DEBUG - > User-Agent: Python/3.11 websockets/12.0
+2025-08-11 13:51:07.379 - DEBUG - < HTTP/1.1 101 Switching Protocols
+2025-08-11 13:51:07.379 - DEBUG - < Date: Mon, 11 Aug 2025 05:51:07 GMT
+2025-08-11 13:51:07.379 - DEBUG - < Connection: upgrade
+2025-08-11 13:51:07.379 - DEBUG - < sec-websocket-extensions: permessage-deflate; client_max_window_bits=15
+2025-08-11 13:51:07.379 - DEBUG - < sec-websocket-accept: otQzDz0lJUYihLLQ+hk2g87Zv6k=
+2025-08-11 13:51:07.379 - DEBUG - < x-request-id: a40ed5bb-6df9-4163-9713-2083cbe2ab98
+2025-08-11 13:51:07.379 - DEBUG - < via: 1.1 google
+2025-08-11 13:51:07.379 - DEBUG - < Upgrade: websocket
+2025-08-11 13:51:07.379 - DEBUG - < cf-cache-status: DYNAMIC
+2025-08-11 13:51:07.379 - DEBUG - < Server: cloudflare
+2025-08-11 13:51:07.379 - DEBUG - < CF-RAY: 96d575944aeb120c-PER
+2025-08-11 13:51:07.379 - DEBUG - = connection is OPEN
+2025-08-11 13:51:07.381 - DEBUG - > TEXT '{"type": "audio_input", "data": "UklGRiQAAABXQV...AAAAAAAAAAAAAAAAAAA=="}' [2827 bytes]
+2025-08-11 13:51:07.381 - DEBUG - > TEXT '{"type": "audio_input", "data": "AAAAAAAAAAAAAA.../zP/M/8z/zP/M/8z/zP8="}' [2767 bytes]
+2025-08-11 13:51:07.381 - DEBUG - > TEXT '{"type": "audio_input", "data": "zP/M/8z/zP/M/8.../4v/i/+L/4v/i/+L/4v8="}' [2767 bytes]
+2025-08-11 13:51:07.382 - DEBUG - > TEXT '{"type": "audio_input", "data": "4v/i/+L/4v/i/+.../hv+D/4T/hv+I/4z/lv8="}' [2767 bytes]
+2025-08-11 13:51:07.382 - DEBUG - > TEXT '{"type": "audio_input", "data": "nP+g/6T/o/+n/6.../4f/k/+f/6P/s/+7/8P8="}' [2767 bytes]
+2025-08-11 13:51:07.382 - DEBUG - > TEXT '{"type": "audio_input", "data": "9//5//r//v/8//.../r/+q/63/r/+x/7f/uf8="}' [2767 bytes]
+2025-08-11 13:51:07.382 - DEBUG - > TEXT '{"type": "audio_input", "data": "vv/F/8r/z//W/9.../+v/8/////P/8//7/+f8="}' [2767 bytes]
+2025-08-11 13:51:07.383 - DEBUG - > TEXT '{"type": "audio_input", "data": "9v/z//b/9v/t/+...ACgAJAAMA+f/2//T/7f8="}' [2767 bytes]
+2025-08-11 13:51:07.383 - DEBUG - > TEXT '{"type": "audio_input", "data": "5f/h/93/3P/V/8.../yP/M/9P/3P/f/+D/2/8="}' [2767 bytes]
+2025-08-11 13:51:07.383 - DEBUG - > TEXT '{"type": "audio_input", "data": "1//S/8v/yP/G/8.../qf+n/6z/pv+j/6f/rf8="}' [2767 bytes]
+2025-08-11 13:51:07.384 - DEBUG - > TEXT '{"type": "audio_input", "data": "uP+7/7n/vf/F/8...ANAAqACcAIAAbABkAGgA="}' [2767 bytes]
+2025-08-11 13:51:07.384 - DEBUG - > TEXT '{"type": "audio_input", "data": "GQAXABsAGQAWAB.../7f/z//z//v/7//3/AgA="}' [2767 bytes]
+2025-08-11 13:51:07.384 - DEBUG - > TEXT '{"type": "audio_input", "data": "AQD9/wEAAgD7//.../rv+1/7n/u/++/7//xP8="}' [2767 bytes]
+2025-08-11 13:51:07.385 - DEBUG - > TEXT '{"type": "audio_input", "data": "yf/M/9H/0f/Q/9...AMgAvAC0AKgAmACMAJQA="}' [2767 bytes]
+2025-08-11 13:51:07.385 - DEBUG - > TEXT '{"type": "audio_input", "data": "KwAtADIAOQA6AD.../z//T/9X/2//i/+T/7f8="}' [2767 bytes]
+2025-08-11 13:51:07.386 - DEBUG - > TEXT '{"type": "audio_input", "data": "9f/5//z//P8DAA.../6//t//H/9v/6//3/9/8="}' [2767 bytes]
+2025-08-11 13:51:07.386 - DEBUG - > TEXT '{"type": "audio_input", "data": "7v/s/+b/4v/d/9...ANgA3ADYANQA2ADQANwA="}' [2767 bytes]
+2025-08-11 13:51:07.387 - DEBUG - > TEXT '{"type": "audio_input", "data": "PAA+AEIAQQA8AD.../5f/i/9z/1//V/9n/1/8="}' [2767 bytes]
+2025-08-11 13:51:07.387 - DEBUG - > TEXT '{"type": "audio_input", "data": "zv/S/9b/1v/W/9.../vv+8/7f/rf+v/7D/r/8="}' [2767 bytes]
+2025-08-11 13:51:07.387 - DEBUG - > TEXT '{"type": "audio_input", "data": "s/+1/7X/sf+v/7...ACAAHAAsAEgAXABUAFQA="}' [2767 bytes]
+2025-08-11 13:51:07.388 - DEBUG - > TEXT '{"type": "audio_input", "data": "FgAXABgAFQATAB.../7v/r/+T/4v/m/+v/6f8="}' [2767 bytes]
+2025-08-11 13:51:07.388 - DEBUG - > TEXT '{"type": "audio_input", "data": "5v/j/97/2//Y/9...ARABIAEkATwBTAFUAUwA="}' [2767 bytes]
+2025-08-11 13:51:07.388 - DEBUG - > TEXT '{"type": "audio_input", "data": "SgBEAEIAPAA1AD.../1f/V/9f/2f/Y/9n/2v8="}' [2767 bytes]
+2025-08-11 13:51:07.389 - DEBUG - > TEXT '{"type": "audio_input", "data": "3P/h/+H/4P/n/+...AFgANAAoABQD///z/9v8="}' [2767 bytes]
+2025-08-11 13:51:07.389 - DEBUG - > TEXT '{"type": "audio_input", "data": "8//4//v/AgAJAA...ABQADAP///f8BAAYACwA="}' [2767 bytes]
+2025-08-11 13:51:07.390 - DEBUG - > TEXT '{"type": "audio_input", "data": "EQASABQAFgATAB...AKgAqAC8ANQA6AD4AQQA="}' [2767 bytes]
+2025-08-11 13:51:07.390 - DEBUG - > TEXT '{"type": "audio_input", "data": "QwA/AD8APQA5AD...ALwAxADcAPQBBAEEARAA="}' [2767 bytes]
+2025-08-11 13:51:07.390 - DEBUG - > TEXT '{"type": "audio_input", "data": "SABOAFEAUABMAE...APwBEAEUAQwBEAEMAPQA="}' [2767 bytes]
+2025-08-11 13:51:07.391 - DEBUG - > TEXT '{"type": "audio_input", "data": "PAA9ADkALwAoAC.../1//X/9//5f/t//H/8P8="}' [2767 bytes]
+2025-08-11 13:51:07.391 - DEBUG - > TEXT '{"type": "audio_input", "data": "8v/1//n/+P/1//.../BAAIAAYACAAMAA0ACQA="}' [2767 bytes]
+2025-08-11 13:51:07.391 - DEBUG - > TEXT '{"type": "audio_input", "data": "BgAHAAgACQANAA...AEQARABQAFwAbAB4AHwA="}' [2767 bytes]
+2025-08-11 13:51:07.392 - DEBUG - > TEXT '{"type": "audio_input", "data": "IAAgACAAIgAlAC.../s/+0/7r/xP/K/9L/2f8="}' [2767 bytes]
+2025-08-11 13:51:07.392 - DEBUG - > TEXT '{"type": "audio_input", "data": "2f/Z/9r/2v/X/9...AEgASAA8ACgAFAPr/9f8="}' [2767 bytes]
+2025-08-11 13:51:07.392 - DEBUG - > TEXT '{"type": "audio_input", "data": "9P/y/+//7f/r/+.../5//i/+T/6//s/+n/7P8="}' [2767 bytes]
+2025-08-11 13:51:07.393 - DEBUG - > TEXT '{"type": "audio_input", "data": "8//5/wIACAAOAB.../v//D/8b/yv/R/9P/1P8="}' [2767 bytes]
+2025-08-11 13:51:07.393 - DEBUG - > TEXT '{"type": "audio_input", "data": "0v/S/9b/1f/R/8.../4v/m/+X/5f/p/+z/7f8="}' [2767 bytes]
+2025-08-11 13:51:07.394 - DEBUG - > TEXT '{"type": "audio_input", "data": "8//2//f/9P/v/+.../8f/1//D/8P/y//b//P8="}' [2767 bytes]
+2025-08-11 13:51:07.394 - DEBUG - > TEXT '{"type": "audio_input", "data": "/f8AAAIAAQAHAA.../5//e/9j/1v/T/9L/1f8="}' [2767 bytes]
+2025-08-11 13:51:07.394 - DEBUG - > TEXT '{"type": "audio_input", "data": "2P/a/9X/zv/N/8...ANwA1ADgAPgBBAEMARQA="}' [2767 bytes]
+2025-08-11 13:51:07.395 - DEBUG - > TEXT '{"type": "audio_input", "data": "SQBQAFQAUgBNAE.../9//+/wQABwABAAEAAQA="}' [2767 bytes]
+2025-08-11 13:51:07.395 - DEBUG - > TEXT '{"type": "audio_input", "data": "9f/v/+r/4P/b/9.../4//l/+z/8P/0//r/+f8="}' [2767 bytes]
+2025-08-11 13:51:07.418 - DEBUG - > TEXT '{"type": "audio_input", "data": "+v/6//X/9P/4//...AAgD8//f/9//8/wEABAA="}' [2767 bytes]
+2025-08-11 13:51:07.418 - DEBUG - > TEXT '{"type": "audio_input", "data": "CQAQABgAIgApAC...//f/+//r/+v/0/+//7/8="}' [2767 bytes]
+2025-08-11 13:51:07.448 - DEBUG - > TEXT '{"type": "audio_input", "data": "6v/l/+D/4P/i/+.../1//S/8z/yP/G/8n/yv8="}' [2767 bytes]
+2025-08-11 13:51:07.478 - DEBUG - > TEXT '{"type": "audio_input", "data": "yv/N/9D/1f/b/+...AKAAjACAAGwAaAB4AGgA="}' [2767 bytes]
+2025-08-11 13:51:07.508 - DEBUG - > TEXT '{"type": "audio_input", "data": "GwAcABoAFwATAA.../8v/z//f/+P/x/+z/6/8="}' [2767 bytes]
+2025-08-11 13:51:07.538 - DEBUG - > TEXT '{"type": "audio_input", "data": "5P/e/9b/yv/E/8...AEQAKAAUABwAKAAkADAA="}' [2767 bytes]
+2025-08-11 13:51:07.539 - DEBUG - > TEXT '{"type": "audio_input", "data": "EgASAAsAAgD7//.../7//p/+r/8P/x/+7/8v8="}' [2767 bytes]
+2025-08-11 13:51:07.568 - DEBUG - > TEXT '{"type": "audio_input", "data": "9//3//j/9//z//...AAgD9//7//f/1//X/+f8="}' [2767 bytes]
+2025-08-11 13:51:07.598 - DEBUG - > TEXT '{"type": "audio_input", "data": "9//z/+//7P/r/+...ADAAOAA8AEQAMAA0AEQA="}' [2767 bytes]
+2025-08-11 13:51:07.628 - DEBUG - > TEXT '{"type": "audio_input", "data": "DwAIAAIA///8//...AIAAdABsAHQAdABcAFQA="}' [2767 bytes]
+2025-08-11 13:51:07.629 - DEBUG - > TEXT '{"type": "audio_input", "data": "EQAQABMADwAJAA.../9v/0/+n/5v/j/93/3/8="}' [2767 bytes]
+2025-08-11 13:51:07.659 - DEBUG - > TEXT '{"type": "audio_input", "data": "3f/a/9j/1P/W/9...ADQAQABYAIgAnACkAKAA="}' [2767 bytes]
+2025-08-11 13:51:07.689 - DEBUG - > TEXT '{"type": "audio_input", "data": "JQArAC8AMwA7AD...AHwAjACkALAAxADUANgA="}' [2767 bytes]
+2025-08-11 13:51:07.719 - DEBUG - > TEXT '{"type": "audio_input", "data": "NwA4ADsAQQBIAE...ATQBKAEMAPwA6ADYAMwA="}' [2767 bytes]
+2025-08-11 13:51:07.720 - DEBUG - > TEXT '{"type": "audio_input", "data": "MAAzADkAPwBDAE...ABAD///n/9v/0//L/9f8="}' [2767 bytes]
+2025-08-11 13:51:07.750 - DEBUG - > TEXT '{"type": "audio_input", "data": "+f/7//7/AAD+//.../r/+s/7D/uP+7/8P/y/8="}' [2767 bytes]
+2025-08-11 13:51:07.780 - DEBUG - > TEXT '{"type": "audio_input", "data": "z//P/9D/1P/X/9...AIAAgACAAIQAjACUAIgA="}' [2767 bytes]
+2025-08-11 13:51:07.810 - DEBUG - > TEXT '{"type": "audio_input", "data": "JAApACwAMgA3AD.../9//7//7//P/8/wQACgA="}' [2767 bytes]
+2025-08-11 13:51:07.840 - DEBUG - > TEXT '{"type": "audio_input", "data": "EwAdACUAKwAqAC.../sP+y/7L/r/+p/6j/qv8="}' [2767 bytes]
+2025-08-11 13:51:07.841 - DEBUG - > TEXT '{"type": "audio_input", "data": "rf+y/6//qf+r/6...AHQAeACMAKwAwADIANQA="}' [2767 bytes]
+2025-08-11 13:51:07.870 - DEBUG - > TEXT '{"type": "audio_input", "data": "NQAtACcAJAAeAB.../5P/m/+n/5P/h/+P/4P8="}' [2767 bytes]
+2025-08-11 13:51:07.900 - DEBUG - > TEXT '{"type": "audio_input", "data": "3f/e/9f/0P/O/8...ABwAHAAgACAALAA0ACAA="}' [2767 bytes]
+2025-08-11 13:51:07.930 - DEBUG - > TEXT '{"type": "audio_input", "data": "BAAAAPr/9v/6/w...AQABBAEMAPgA8ADwAPAA="}' [2767 bytes]
+2025-08-11 13:51:07.931 - DEBUG - > TEXT '{"type": "audio_input", "data": "PgA+AD8AQABBAE.../0//W/9v/3//i/+L/6v8="}' [2767 bytes]
+2025-08-11 13:51:07.959 - DEBUG - > TEXT '{"type": "audio_input", "data": "8f/1//j/+//9//.../wv+//7r/uv/B/8f/z/8="}' [2767 bytes]
+2025-08-11 13:51:07.990 - DEBUG - > TEXT '{"type": "audio_input", "data": "0f/T/9n/3P/f/+...AXgBfAGAAXABaAFcAVAA="}' [2767 bytes]
+2025-08-11 13:51:08.020 - DEBUG - > TEXT '{"type": "audio_input", "data": "VABSAE0ASQBJAE.../6f/l/+T/5f/m/+T/5/8="}' [2767 bytes]
+2025-08-11 13:51:08.050 - DEBUG - > TEXT '{"type": "audio_input", "data": "6P/h/9z/3f/Y/9.../zP/V/9z/2v/a/93/4P8="}' [2767 bytes]
+2025-08-11 13:51:08.051 - DEBUG - > TEXT '{"type": "audio_input", "data": "4//i/+T/4v/g/+...AEwAZACMAJgAsADAANAA="}' [2767 bytes]
+2025-08-11 13:51:08.080 - DEBUG - > TEXT '{"type": "audio_input", "data": "PgBAAEEAQAA3AD.../7//p/9//3P/d/9r/1v8="}' [2767 bytes]
+2025-08-11 13:51:08.110 - DEBUG - > TEXT '{"type": "audio_input", "data": "0f/J/8P/xP/J/8...AKAArACoALAAnABwAEgA="}' [2767 bytes]
+2025-08-11 13:51:08.140 - DEBUG - > TEXT '{"type": "audio_input", "data": "DAAGAP7//v/7//...AAQADAAAA//8DAAQABAA="}' [2767 bytes]
+2025-08-11 13:51:08.141 - DEBUG - > TEXT '{"type": "audio_input", "data": "AQD+/wAA//8AAP...AOwA9ADwANQAtACgAIQA="}' [2767 bytes]
+2025-08-11 13:51:08.170 - DEBUG - > TEXT '{"type": "audio_input", "data": "FgAQABAAEQAUAB...AMAA9AEEAQABAAD8AQAA="}' [2767 bytes]
+2025-08-11 13:51:08.200 - DEBUG - > TEXT '{"type": "audio_input", "data": "PgA5ADYALQAmAC...ACwAKAAsABQD//wEAAgA="}' [2767 bytes]
+2025-08-11 13:51:08.230 - DEBUG - > TEXT '{"type": "audio_input", "data": "/f/8/////P/5//...AFQAVABoAHwAfACEAJgA="}' [2767 bytes]
+2025-08-11 13:51:08.260 - DEBUG - > TEXT '{"type": "audio_input", "data": "JAAbABoAFAAMAA...ACQAMAAoABwD+//b/9P8="}' [2767 bytes]
+2025-08-11 13:51:08.260 - DEBUG - > TEXT '{"type": "audio_input", "data": "8f/r/+b/4v/i/+...AFgAeABwAFAANAAsACAA="}' [2767 bytes]
+2025-08-11 13:51:08.290 - DEBUG - > TEXT '{"type": "audio_input", "data": "BwALABAAEwASAB...ALwAsACoALAAuADEANwA="}' [2767 bytes]
+2025-08-11 13:51:08.320 - DEBUG - > TEXT '{"type": "audio_input", "data": "OwA5AD4AQQA9AE.../9P/3//T/8P/x//D/6v8="}' [2767 bytes]
+2025-08-11 13:51:08.350 - DEBUG - > TEXT '{"type": "audio_input", "data": "6//u/+v/6f/m/+...AMAAjABMABAD3/+r/6v8="}' [2767 bytes]
+2025-08-11 13:51:08.351 - DEBUG - > TEXT '{"type": "audio_input", "data": "8f/4/wEABwAPAB.../BQAKAAcAAAD+/wEAAgA="}' [2767 bytes]
+2025-08-11 13:51:08.380 - DEBUG - > TEXT '{"type": "audio_input", "data": "BQAGAAkADAAJAA...AFgARAA8ACwAEAAIA//8="}' [2767 bytes]
+2025-08-11 13:51:08.411 - DEBUG - > TEXT '{"type": "audio_input", "data": "AgAJABIAHgAlAC.../8//2//v/9v/v/+3/6f8="}' [2767 bytes]
+2025-08-11 13:51:08.441 - DEBUG - > TEXT '{"type": "audio_input", "data": "5f/i/9//4f/l/+...AGwAYABQAFQAVAA0ACgA="}' [2767 bytes]
+2025-08-11 13:51:08.441 - DEBUG - > TEXT '{"type": "audio_input", "data": "CAD+//v/+P/z//.../6//n/+b/5v/h/+H/3/8="}' [2767 bytes]
+2025-08-11 13:51:08.471 - DEBUG - > TEXT '{"type": "audio_input", "data": "2//b/9f/0v/P/8.../7f/0//z/AgABAAEA/v8="}' [2767 bytes]
+2025-08-11 13:51:08.501 - DEBUG - > TEXT '{"type": "audio_input", "data": "+P/3//T/7//z/+.../9v/5//7/AgAIAA0AEQA="}' [2767 bytes]
+2025-08-11 13:51:08.531 - DEBUG - > TEXT '{"type": "audio_input", "data": "EwAVABkAHQAoAD.../2//a/9X/0v/J/8X/x/8="}' [2767 bytes]
+2025-08-11 13:51:08.561 - DEBUG - > TEXT '{"type": "audio_input", "data": "xv/J/83/0f/T/9...ACAADAP7/AAD9//b/8P8="}' [2767 bytes]
+2025-08-11 13:51:08.562 - DEBUG - > TEXT '{"type": "audio_input", "data": "5//h/+P/6f/q/+...AQQBGAEwAUABTAFcAVgA="}' [2767 bytes]
+2025-08-11 13:51:08.591 - DEBUG - > TEXT '{"type": "audio_input", "data": "TgBGAEYAQwA7AD.../7//z/+7/7v/v//D/8f8="}' [2767 bytes]
+2025-08-11 13:51:08.621 - DEBUG - > TEXT '{"type": "audio_input", "data": "9P/6/wAABgALAB.../6v/p/+b/4//k/+L/5f8="}' [2767 bytes]
+2025-08-11 13:51:08.652 - DEBUG - > TEXT '{"type": "audio_input", "data": "6//l/+T/5v/i/+...AEgASABgAHwAdAB0AIwA="}' [2767 bytes]
+2025-08-11 13:51:08.652 - DEBUG - > TEXT '{"type": "audio_input", "data": "KgAzADoAQABFAE.../2f/b/93/2f/a/+L/4/8="}' [2767 bytes]
+2025-08-11 13:51:08.682 - DEBUG - > TEXT '{"type": "audio_input", "data": "4v/n/+b/6P/r/+...AEAANABEAFAAWABwAHgA="}' [2767 bytes]
+2025-08-11 13:51:08.712 - DEBUG - > TEXT '{"type": "audio_input", "data": "HgAeAB8AHAAZAB.../8f/1//f/8//3//z/+/8="}' [2767 bytes]
+2025-08-11 13:51:08.742 - DEBUG - > TEXT '{"type": "audio_input", "data": "/f///wMACwAMAA.../9f/z/+//9f/7//z/AgA="}' [2767 bytes]
+2025-08-11 13:51:08.743 - DEBUG - > TEXT '{"type": "audio_input", "data": "CAAHAAoADwAOAB...ADwALAAkACQADAP////8="}' [2767 bytes]
+2025-08-11 13:51:08.772 - DEBUG - > TEXT '{"type": "audio_input", "data": "+v/1//H/5//b/8...AQAA6ADQALwAqACUAKgA="}' [2767 bytes]
+2025-08-11 13:51:08.802 - DEBUG - > TEXT '{"type": "audio_input", "data": "KAAjACkAJAAiAC...AFwAQAA8ACwAFAAEAAQA="}' [2767 bytes]
+2025-08-11 13:51:08.831 - DEBUG - > TEXT '{"type": "audio_input", "data": "AQD4//b/+v/7//...ANwAxADIANQA1ADgAPQA="}' [2767 bytes]
+2025-08-11 13:51:08.862 - DEBUG - > TEXT '{"type": "audio_input", "data": "PgBBAEQARgBHAE...AAQD8//n/+v/7/wEACQA="}' [2767 bytes]
+2025-08-11 13:51:08.862 - DEBUG - > TEXT '{"type": "audio_input", "data": "CwANAA0ACgAMAA...ANQAyACsAIAAcACMAJAA="}' [2767 bytes]
+2025-08-11 13:51:08.892 - DEBUG - > TEXT '{"type": "audio_input", "data": "JAAgAB8AIgAmAC...ACAABAPv/9//2//T/8v8="}' [2767 bytes]
+2025-08-11 13:51:08.922 - DEBUG - > TEXT '{"type": "audio_input", "data": "7v/p/+//8f/w/+.../zP/J/8z/0v/a/+P/6v8="}' [2767 bytes]
+2025-08-11 13:51:08.952 - DEBUG - > TEXT '{"type": "audio_input", "data": "8//4//3//v/+/w.../6P/o/+L/3P/g/+L/3/8="}' [2767 bytes]
+2025-08-11 13:51:08.952 - DEBUG - > TEXT '{"type": "audio_input", "data": "4P/e/9v/2P/U/9...AAgD+//z//v/8//b/9f8="}' [2767 bytes]
+2025-08-11 13:51:08.980 - DEBUG - > TEXT '{"type": "audio_input", "data": "9//4//j/8//y//.../2v/O/8L/uP+0/7b/tP8="}' [2767 bytes]
+2025-08-11 13:51:09.010 - DEBUG - > TEXT '{"type": "audio_input", "data": "tf+9/8L/yP/T/+...ADQASAA4ADwAXABQAEgA="}' [2767 bytes]
+2025-08-11 13:51:09.041 - DEBUG - > TEXT '{"type": "audio_input", "data": "GgAdAB8AIgAhAC...AAQADAAMA/v/4//n/AAA="}' [2767 bytes]
+2025-08-11 13:51:09.071 - DEBUG - > TEXT '{"type": "audio_input", "data": "CAAOABEAFgAcAC.../+f/w/+3/6v/w//D/8f8="}' [2767 bytes]
+2025-08-11 13:51:09.071 - DEBUG - > TEXT '{"type": "audio_input", "data": "8v/w//T/9//5//...AJwAsADEALQApACgAJAA="}' [2767 bytes]
+2025-08-11 13:51:09.101 - DEBUG - > TEXT '{"type": "audio_input", "data": "HgAXABIAEgAOAA.../zv/Q/9X/1//W/9P/0P8="}' [2767 bytes]
+2025-08-11 13:51:09.131 - DEBUG - > TEXT '{"type": "audio_input", "data": "0f/W/9j/0v/M/8...AIAAkACcAJAAdABkAGAA="}' [2767 bytes]
+2025-08-11 13:51:09.161 - DEBUG - > TEXT '{"type": "audio_input", "data": "GAATAAsACAAFAP...ALQAtACoAIwAgABsAFwA="}' [2767 bytes]
+2025-08-11 13:51:09.162 - DEBUG - > TEXT '{"type": "audio_input", "data": "FQAUABUADQAGAA.../6//s/+b/6P/s/+n/6P8="}' [2767 bytes]
+2025-08-11 13:51:09.191 - DEBUG - > TEXT '{"type": "audio_input", "data": "4v/h/+P/5v/t/+.../4//h/+T/6f/p/+v/6v8="}' [2767 bytes]
+2025-08-11 13:51:09.221 - DEBUG - > TEXT '{"type": "audio_input", "data": "6f/r/+7/9v/9/w...AHQAkACgAJgAoAC0ALAA="}' [2767 bytes]
+2025-08-11 13:51:09.250 - DEBUG - > TEXT '{"type": "audio_input", "data": "KAAiACMAIQAaAB.../8//x/+//7v/v//T/AQA="}' [2767 bytes]
+2025-08-11 13:51:09.281 - DEBUG - > TEXT '{"type": "audio_input", "data": "CAAMABEAEAAMAA...AIgAgAB4AGAAWABkAFAA="}' [2767 bytes]
+2025-08-11 13:51:09.281 - DEBUG - > TEXT '{"type": "audio_input", "data": "EgAQABAAEwARAA...AJQAqADEANAA2ADwAQQA="}' [2767 bytes]
+2025-08-11 13:51:09.311 - DEBUG - > TEXT '{"type": "audio_input", "data": "QAA6ADkAOwA6AD.../4P/a/9H/zP/M/8j/y/8="}' [2767 bytes]
+2025-08-11 13:51:09.341 - DEBUG - > TEXT '{"type": "audio_input", "data": "zf/L/8v/y//M/8.../8v/z//H/8P/3//n/+f8="}' [2767 bytes]
+2025-08-11 13:51:09.371 - DEBUG - > TEXT '{"type": "audio_input", "data": "/P/9/wMAAAD1//...A///+/////P/2//P/8/8="}' [2767 bytes]
+2025-08-11 13:51:09.371 - DEBUG - > TEXT '{"type": "audio_input", "data": "8P/u/+z/5f/k/+.../5f/o/+f/4//i/+L/5f8="}' [2767 bytes]
+2025-08-11 13:51:09.401 - DEBUG - > TEXT '{"type": "audio_input", "data": "7v/y//P/9//4//...ASABCADwAOAA3ADkAOAA="}' [2767 bytes]
+2025-08-11 13:51:09.431 - DEBUG - > TEXT '{"type": "audio_input", "data": "QABKAFEAVwBcAG.../5f/w//H/+P8EAAsAEwA="}' [2767 bytes]
+2025-08-11 13:51:09.461 - DEBUG - > TEXT '{"type": "audio_input", "data": "GwAbABUADwARAB...AEAAKAAQAAgADAP7/8/8="}' [2767 bytes]
+2025-08-11 13:51:09.492 - DEBUG - > TEXT '{"type": "audio_input", "data": "6//s/+b/3f/d/9...AEgAPAA4ADAAKAAwACQA="}' [2767 bytes]
+2025-08-11 13:51:09.492 - DEBUG - > TEXT '{"type": "audio_input", "data": "BwACAAMABQAIAA...ACAAVACQALwA8AEIAQAA="}' [2767 bytes]
+2025-08-11 13:51:09.522 - DEBUG - > TEXT '{"type": "audio_input", "data": "OQAzADIALQAvAD.../8P/0//j/+//+/wEA/P8="}' [2767 bytes]
+2025-08-11 13:51:09.552 - DEBUG - > TEXT '{"type": "audio_input", "data": "9//8//r/9//4//...AMAAuACsAKQAnACQAHQA="}' [2767 bytes]
+2025-08-11 13:51:09.582 - DEBUG - > TEXT '{"type": "audio_input", "data": "GQAWABIAEgAZAB.../yv/H/8b/xP/B/7//v/8="}' [2767 bytes]
+2025-08-11 13:51:09.582 - DEBUG - > TEXT '{"type": "audio_input", "data": "v/++/8D/xv/I/8.../7//s/+X/5f/j/97/3P8="}' [2767 bytes]
+2025-08-11 13:51:09.612 - DEBUG - > TEXT '{"type": "audio_input", "data": "3f/c/+H/6f/x//...//v/4//T/9//5//X/+P8="}' [2767 bytes]
+2025-08-11 13:51:09.642 - DEBUG - > TEXT '{"type": "audio_input", "data": "+f/5////AwACAP.../4f/f/9v/3f/e/+L/5/8="}' [2767 bytes]
+2025-08-11 13:51:09.672 - DEBUG - > TEXT '{"type": "audio_input", "data": "4v/g/+P/3//c/+...AJAAdABgAFgASABMAFwA="}' [2767 bytes]
+2025-08-11 13:51:09.673 - DEBUG - > TEXT '{"type": "audio_input", "data": "HQAiACUAJwAkAC...AFQAVABIAEwAOAAwADwA="}' [2767 bytes]
+2025-08-11 13:51:09.701 - DEBUG - > TEXT '{"type": "audio_input", "data": "DgANAAgAAgD+//.../4P/k/+L/5P/s/+7/7f8="}' [2767 bytes]
+2025-08-11 13:51:09.731 - DEBUG - > TEXT '{"type": "audio_input", "data": "6f/i/93/3P/V/8...ACgAHAAgACgAIAAcADgA="}' [2767 bytes]
+2025-08-11 13:51:09.762 - DEBUG - > TEXT '{"type": "audio_input", "data": "EAALAAsADQAJAA.../9v/4//T/8P/2/wIABQA="}' [2767 bytes]
+2025-08-11 13:51:09.792 - DEBUG - > TEXT '{"type": "audio_input", "data": "BQAIAAwACQAFAA.../9//2//D/7//s/+j/5/8="}' [2767 bytes]
+2025-08-11 13:51:09.792 - DEBUG - > TEXT '{"type": "audio_input", "data": "4v/f/9z/2P/W/9.../2//c/93/4//n/+X/6v8="}' [2767 bytes]
+2025-08-11 13:51:09.822 - DEBUG - > TEXT '{"type": "audio_input", "data": "6//n/+3/8v/3//.../wv/C/7v/uP+5/73/x/8="}' [2767 bytes]
+2025-08-11 13:51:09.852 - DEBUG - > TEXT '{"type": "audio_input", "data": "yv/H/8j/zv/V/9.../5//h/97/3v/Z/9P/z/8="}' [2767 bytes]
+2025-08-11 13:51:09.882 - DEBUG - > TEXT '{"type": "audio_input", "data": "yP/G/8X/w//H/8...AVgBUAFgAXgBeAF0AXAA="}' [2767 bytes]
+2025-08-11 13:51:09.883 - DEBUG - > TEXT '{"type": "audio_input", "data": "WgBZAFsAXgBeAF.../4f/k/+f/7P/t//L/9P8="}' [2767 bytes]
+2025-08-11 13:51:09.912 - DEBUG - > TEXT '{"type": "audio_input", "data": "8//4//b/8//1//.../2v/W/9j/2v/a/93/5P8="}' [2767 bytes]
+2025-08-11 13:51:09.942 - DEBUG - > TEXT '{"type": "audio_input", "data": "6//s/+n/7P/x//...AGwAYABcAGAAYABoAGAA="}' [2767 bytes]
+2025-08-11 13:51:09.973 - DEBUG - > TEXT '{"type": "audio_input", "data": "FgAZABsAHAAgAC.../8//z//L/8//z//X/9f8="}' [2767 bytes]
+2025-08-11 13:51:09.973 - DEBUG - > TEXT '{"type": "audio_input", "data": "8P/s/+v/6//t/+...AGQAXABUAEgAHAP3/+f8="}' [2767 bytes]
+2025-08-11 13:51:10.003 - DEBUG - > TEXT '{"type": "audio_input", "data": "9f/x//P/9//w/+...//P/3//D/6P/m/+b/7f8="}' [2767 bytes]
+2025-08-11 13:51:10.033 - DEBUG - > TEXT '{"type": "audio_input", "data": "9P/0//L/8v/0//...AEQANAAsACAAFAAUAAgA="}' [2767 bytes]
+2025-08-11 13:51:10.063 - DEBUG - > TEXT '{"type": "audio_input", "data": "AAAAAP//9v/s/+...AJgAtADQAOAA0AC8ALwA="}' [2767 bytes]
+2025-08-11 13:51:10.093 - DEBUG - > TEXT '{"type": "audio_input", "data": "NAA1ADgAPAA8AD...ABgALABIAEgASABkAHAA="}' [2767 bytes]
+2025-08-11 13:51:10.094 - DEBUG - > TEXT '{"type": "audio_input", "data": "IwAnACQAIgAjAC...AMAAvAC0AKgAuACkAJwA="}' [2767 bytes]
+2025-08-11 13:51:10.123 - DEBUG - > TEXT '{"type": "audio_input", "data": "LQAvAC8AMAAyAD...ACQARABcAGwAiACsALgA="}' [2767 bytes]
+2025-08-11 13:51:10.153 - DEBUG - > TEXT '{"type": "audio_input", "data": "MwAzACwAKgAmAB.../2f/c/+H/6//z//P/9P8="}' [2767 bytes]
+2025-08-11 13:51:10.182 - DEBUG - > TEXT '{"type": "audio_input", "data": "9//5/wIACwALAA...ANwA5ADcAMwAxADAALgA="}' [2767 bytes]
+2025-08-11 13:51:10.183 - DEBUG - > TEXT '{"type": "audio_input", "data": "LAAtAC4ALAAqAC.../7v/1//z/BwAPABYAGQA="}' [2767 bytes]
+2025-08-11 13:51:10.192 - DEBUG - < TEXT '{"type":"chat_metadata","chat_group_id":"b09d7d...6-d4915930d2e51017032"}' [187 bytes]
+2025-08-11 13:51:10.213 - DEBUG - > TEXT '{"type": "audio_input", "data": "GAAdACQAKQAvAD.../2v/i/+r/7//u/+3/6v8="}' [2767 bytes]
+2025-08-11 13:51:10.243 - DEBUG - > TEXT '{"type": "audio_input", "data": "5f/i/+D/3v/Y/9...ADgATABYAGAAbAB8AJgA="}' [2767 bytes]
+2025-08-11 13:51:10.273 - DEBUG - > TEXT '{"type": "audio_input", "data": "IQAVABIADwAJAA.../6v/o/+b/4//g/93/2/8="}' [2767 bytes]
+2025-08-11 13:51:10.303 - DEBUG - > TEXT '{"type": "audio_input", "data": "2P/X/93/5v/r/+.../w/++/73/wP/D/8j/zP8="}' [2767 bytes]
+2025-08-11 13:51:10.303 - DEBUG - > TEXT '{"type": "audio_input", "data": "zv/W/+D/5P/o/+...AGQAUABAACwAEAAQABQA="}' [2767 bytes]
+2025-08-11 13:51:10.333 - DEBUG - > TEXT '{"type": "audio_input", "data": "BwAQABcAHAAiAC...ACgANAAwABwAKABEAFAA="}' [2767 bytes]
+2025-08-11 13:51:10.363 - DEBUG - > TEXT '{"type": "audio_input", "data": "FgATAAwACQAGAA.../z//L/8j/xP/E/8n/zf8="}' [2767 bytes]
+2025-08-11 13:51:10.393 - DEBUG - > TEXT '{"type": "audio_input", "data": "z//T/9v/4f/i/+...AGwAdABsAGAAaABoAGAA="}' [2767 bytes]
+2025-08-11 13:51:10.394 - DEBUG - > TEXT '{"type": "audio_input", "data": "FgAZACQAKAAmAC.../5f/l/+r/9f/4//b/9v8="}' [2767 bytes]
+2025-08-11 13:51:10.423 - DEBUG - > TEXT '{"type": "audio_input", "data": "+v///wUABgACAA.../9P/1//T/8//z//n/+/8="}' [2767 bytes]
+2025-08-11 13:51:10.453 - DEBUG - > TEXT '{"type": "audio_input", "data": "9//z//T/8//y/+...AGQAYABUAEgASABEAEQA="}' [2767 bytes]
+2025-08-11 13:51:10.481 - DEBUG - > TEXT '{"type": "audio_input", "data": "FQAVABkAHQAcAC.../zP/V/9j/1//a/9n/1f8="}' [2767 bytes]
+2025-08-11 13:51:10.511 - DEBUG - > TEXT '{"type": "audio_input", "data": "z//P/9L/0//U/9...ADgAMAAoACQAMAAgA/v8="}' [2767 bytes]
+2025-08-11 13:51:10.511 - DEBUG - > TEXT '{"type": "audio_input", "data": "+f/z//D/8v/3//...A/v8BAAYACgARABMAEAA="}' [2767 bytes]
+2025-08-11 13:51:10.541 - DEBUG - > TEXT '{"type": "audio_input", "data": "DgAPABUAFQATAB.../8//8/wIABwAJAAgABQA="}' [2767 bytes]
+2025-08-11 13:51:10.571 - DEBUG - > TEXT '{"type": "audio_input", "data": "BQAFAP///P/+//...ADQAHAAMAAgAEAAIAAwA="}' [2767 bytes]
+2025-08-11 13:51:10.601 - DEBUG - > TEXT '{"type": "audio_input", "data": "BwACAPr/8f/s/+.../9v/9/wQACQALAA0ADAA="}' [2767 bytes]
+2025-08-11 13:51:10.602 - DEBUG - > TEXT '{"type": "audio_input", "data": "BwD///n/9f/v/+.../uP+0/7H/sf+u/6z/r/8="}' [2767 bytes]
+2025-08-11 13:51:10.632 - DEBUG - > TEXT '{"type": "audio_input", "data": "rf+q/6z/rf+u/7...AJAAdAB0AHwAiACMAHwA="}' [2767 bytes]
+2025-08-11 13:51:10.662 - DEBUG - > TEXT '{"type": "audio_input", "data": "GgAZABgAGQAeAB...ADwAIAA4AFAATABAAEQA="}' [2767 bytes]
+2025-08-11 13:51:10.692 - DEBUG - > TEXT '{"type": "audio_input", "data": "FAAWABwAJAAiAC...AEAAPAA8AEgAPAA4ADwA="}' [2767 bytes]
+2025-08-11 13:51:10.692 - DEBUG - > TEXT '{"type": "audio_input", "data": "CwABAAAA/P/v/+...ASABMAFEASQBCAEUARQA="}' [2767 bytes]
+2025-08-11 13:51:10.722 - DEBUG - > TEXT '{"type": "audio_input", "data": "RwBFAEIAPwA4AD.../7f/s/+7/7v/v//D/8v8="}' [2767 bytes]
+2025-08-11 13:51:10.752 - DEBUG - > TEXT '{"type": "audio_input", "data": "9P/0//n/+v/5//...AHQAdAB8AHQAXABYAFgA="}' [2767 bytes]
+2025-08-11 13:51:10.782 - DEBUG - > TEXT '{"type": "audio_input", "data": "GAAZABkAGgAZAB...A+v/9/wEAAQACAAEAAgA="}' [2767 bytes]
+2025-08-11 13:51:10.812 - DEBUG - > TEXT '{"type": "audio_input", "data": "CgAWABoAIwAxAD...AHwAjACoAKAAlACcAJgA="}' [2767 bytes]
+2025-08-11 13:51:10.813 - DEBUG - > TEXT '{"type": "audio_input", "data": "IgAeABYADAAGAA.../5//o/+b/4P/l/+n/6P8="}' [2767 bytes]
+2025-08-11 13:51:10.843 - DEBUG - > TEXT '{"type": "audio_input", "data": "7P/t/+v/5v/e/9.../3v/h/+L/7P/x//H/+f8="}' [2767 bytes]
+2025-08-11 13:51:10.873 - DEBUG - > TEXT '{"type": "audio_input", "data": "+v/4//z/AwAAAP.../4f/a/9T/1P/W/9H/zf8="}' [2767 bytes]
+2025-08-11 13:51:10.903 - DEBUG - > TEXT '{"type": "audio_input", "data": "zP/P/9P/zv/J/8...AOAA4ADsANwAxACwAIgA="}' [2767 bytes]
+2025-08-11 13:51:10.903 - DEBUG - > TEXT '{"type": "audio_input", "data": "EwAGAAIA/P/2//...ADwASAA8AEAARAAwACAA="}' [2767 bytes]
+2025-08-11 13:51:10.933 - DEBUG - > TEXT '{"type": "audio_input", "data": "BwAFAAQAAwAHAA...AAAACAAMAAQD///z//f8="}' [2767 bytes]
+2025-08-11 13:51:10.963 - DEBUG - > TEXT '{"type": "audio_input", "data": "+v/1//v/+v/y/+...ALwAwADEALwAqACsAKwA="}' [2767 bytes]
+2025-08-11 13:51:10.993 - DEBUG - > TEXT '{"type": "audio_input", "data": "JgAhAB8AGwAWAB.../4f/a/9b/zv/F/8X/yv8="}' [2767 bytes]
+2025-08-11 13:51:11.023 - DEBUG - > TEXT '{"type": "audio_input", "data": "zP/J/8r/0v/Z/9...ABgD8//n//P/8//3/BAA="}' [2767 bytes]
+2025-08-11 13:51:11.024 - DEBUG - > TEXT '{"type": "audio_input", "data": "AAD4//z//P/6//...AFQARAA8ADAAIAAYAAAA="}' [2767 bytes]
+2025-08-11 13:51:11.053 - DEBUG - > TEXT '{"type": "audio_input", "data": "+//5////DQAUAB.../+//5////BQAIAA0ACAA="}' [2767 bytes]
+2025-08-11 13:51:11.084 - DEBUG - > TEXT '{"type": "audio_input", "data": "DAAUABcAHAAcAB.../vf+9/8L/x//I/8n/0P8="}' [2767 bytes]
+2025-08-11 13:51:11.114 - DEBUG - > TEXT '{"type": "audio_input", "data": "2//d/9r/2//d/+...AIQAjACwAOQA9AD0AQQA="}' [2767 bytes]
+2025-08-11 13:51:11.114 - DEBUG - > TEXT '{"type": "audio_input", "data": "QgBAAD0AOgAyAC.../3//f/+L/5P/j/+L/4/8="}' [2767 bytes]
+2025-08-11 13:51:11.144 - DEBUG - > TEXT '{"type": "audio_input", "data": "5f/r//D/+P/+//.../5v/h/97/5P/l/+b/7f8="}' [2767 bytes]
+2025-08-11 13:51:11.174 - DEBUG - > TEXT '{"type": "audio_input", "data": "8P/z//f/+P/3//.../9v///wYADQARABQAHAA="}' [2767 bytes]
+2025-08-11 13:51:11.204 - DEBUG - > TEXT '{"type": "audio_input", "data": "JwAuADMAOwBBAE.../3P/a/9b/1v/X/9j/3f8="}' [2767 bytes]
+2025-08-11 13:51:11.204 - DEBUG - > TEXT '{"type": "audio_input", "data": "3f/a/93/3P/U/8...ALQAlACAAGQAQAAUA/f8="}' [2767 bytes]
+2025-08-11 13:51:11.234 - DEBUG - > TEXT '{"type": "audio_input", "data": "//8JABAADQARAB...AKgAtAC0ALAAtACcAIAA="}' [2767 bytes]
+2025-08-11 13:51:11.264 - DEBUG - > TEXT '{"type": "audio_input", "data": "GwAaAB8AIAAiAC.../5//i/+L/6f/v//L/9v8="}' [2767 bytes]
+2025-08-11 13:51:11.294 - DEBUG - > TEXT '{"type": "audio_input", "data": "9P/2//b/9v/2/+.../AQAJAAwAEgAbABwAFwA="}' [2767 bytes]
+2025-08-11 13:51:11.325 - DEBUG - > TEXT '{"type": "audio_input", "data": "FQARAA4AEAAMAA...AJAAtADcAPgA/AD4AQAA="}' [2767 bytes]
+2025-08-11 13:51:11.325 - DEBUG - > TEXT '{"type": "audio_input", "data": "OwA3ADYAMgAsAC...AGwAbAB0AIAAdAB0AHwA="}' [2767 bytes]
+2025-08-11 13:51:11.355 - DEBUG - > TEXT '{"type": "audio_input", "data": "GAAPAA0ADgAOAA...//v8AAP3//P/5//T/8/8="}' [2767 bytes]
+2025-08-11 13:51:11.385 - DEBUG - > TEXT '{"type": "audio_input", "data": "9P/0//P/8v/z/+.../zP/P/87/zP/M/87/0v8="}' [2767 bytes]
+2025-08-11 13:51:11.415 - DEBUG - > TEXT '{"type": "audio_input", "data": "1//Z/9f/1v/Z/9...ANwA7AD4APAA5ADUAMAA="}' [2767 bytes]
+2025-08-11 13:51:11.415 - DEBUG - > TEXT '{"type": "audio_input", "data": "KAAlACgAJQAeAB.../8P/z//H/7v/x//H/8f8="}' [2767 bytes]
+2025-08-11 13:51:11.445 - DEBUG - > TEXT '{"type": "audio_input", "data": "8f/u/+//7f/o/+.../uf+8/7j/tv+3/7b/vf8="}' [2767 bytes]
+2025-08-11 13:51:11.475 - DEBUG - > TEXT '{"type": "audio_input", "data": "x//O/9H/1P/T/8...AFgAaABoAFwAaAB4AIQA="}' [2767 bytes]
+2025-08-11 13:51:11.505 - DEBUG - > TEXT '{"type": "audio_input", "data": "IwAfABgAFwARAA...AHwAbABgAFgAWABUAFwA="}' [2767 bytes]
+2025-08-11 13:51:11.506 - DEBUG - > TEXT '{"type": "audio_input", "data": "HAAfACIAIwAhAC.../zf/L/8j/zf/M/8v/0P8="}' [2767 bytes]
+2025-08-11 13:51:11.535 - DEBUG - > TEXT '{"type": "audio_input", "data": "0f/O/8//0P/S/9...AOQAxACsAIQAWABAACQA="}' [2767 bytes]
+2025-08-11 13:51:11.566 - DEBUG - > TEXT '{"type": "audio_input", "data": "AwADAAEA/P/+/w.../3P/Y/9X/1v/b/93/3P8="}' [2767 bytes]
+2025-08-11 13:51:11.596 - DEBUG - > TEXT '{"type": "audio_input", "data": "3v/d/9f/1P/a/9...AMwAwACwAKwAoACQAHwA="}' [2767 bytes]
+2025-08-11 13:51:11.626 - DEBUG - > TEXT '{"type": "audio_input", "data": "IAAbABcAGAAYAB...ADgAPABEADwAKAAsAEQA="}' [2767 bytes]
+2025-08-11 13:51:11.626 - DEBUG - > TEXT '{"type": "audio_input", "data": "EwATABgAHgAiAC.../6v/v/+7/7P/s/+v/6v8="}' [2767 bytes]
+2025-08-11 13:51:11.656 - DEBUG - > TEXT '{"type": "audio_input", "data": "5v/c/9//6v/t//...ADQARAA0ABQD4//T/9f8="}' [2767 bytes]
+2025-08-11 13:51:11.686 - DEBUG - > TEXT '{"type": "audio_input", "data": "8P/t//D/8f/t/+...ABgACAAEABgAHAAkAEAA="}' [2767 bytes]
+2025-08-11 13:51:11.716 - DEBUG - > TEXT '{"type": "audio_input", "data": "FAASABcAHgAeAB...A/f/0/+3/5f/d/9z/4P8="}' [2767 bytes]
+2025-08-11 13:51:11.716 - DEBUG - > TEXT '{"type": "audio_input", "data": "2v/S/9L/0v/U/9.../3P/i/+X/6//u//D/8/8="}' [2767 bytes]
+2025-08-11 13:51:11.746 - DEBUG - > TEXT '{"type": "audio_input", "data": "8P/u/+3/6f/g/+...AGAAbABkAGAAdACMAKgA="}' [2767 bytes]
+2025-08-11 13:51:11.776 - DEBUG - > TEXT '{"type": "audio_input", "data": "LQAwADAALQAvAD.../9//5//z//f8AAP3/+f8="}' [2767 bytes]
+2025-08-11 13:51:11.807 - DEBUG - > TEXT '{"type": "audio_input", "data": "9//2//T/8P/u/+...ACAABAPz/8v/p/+X/3v8="}' [2767 bytes]
+2025-08-11 13:51:11.807 - DEBUG - > TEXT '{"type": "audio_input", "data": "1f/N/8f/w//B/8...ACAAEAPz/9//z//P/8/8="}' [2767 bytes]
+2025-08-11 13:51:11.837 - DEBUG - > TEXT '{"type": "audio_input", "data": "9P/1//H/+P8BAA.../7P/r/+v/6P/g/9//4P8="}' [2767 bytes]
+2025-08-11 13:51:11.867 - DEBUG - > TEXT '{"type": "audio_input", "data": "3//g/+P/5f/l/+...AEgAUABEAEgASAA4AEAA="}' [2767 bytes]
+2025-08-11 13:51:11.897 - DEBUG - > TEXT '{"type": "audio_input", "data": "EgAPABAAFgAbAC...ARABFAEEAPgA3ACwAKAA="}' [2767 bytes]
+2025-08-11 13:51:11.927 - DEBUG - > TEXT '{"type": "audio_input", "data": "LQAsACUAIQAbAB.../6v/p/+X/5v/m/+v/7v8="}' [2767 bytes]
+2025-08-11 13:51:11.928 - DEBUG - > TEXT '{"type": "audio_input", "data": "6//t/+r/5v/j/+...AHgAgACAAKAAvADMAPQA="}' [2767 bytes]
+2025-08-11 13:51:11.957 - DEBUG - > TEXT '{"type": "audio_input", "data": "PwA6AEIATQBOAE...AEAAbAB8AHwAiACgALgA="}' [2767 bytes]
+2025-08-11 13:51:11.981 - DEBUG - > TEXT '{"type": "audio_input", "data": "LwAqACkAJwAkAC...AMgA0ADkAPQA8ADcAMQA="}' [2767 bytes]
+2025-08-11 13:51:12.012 - DEBUG - > TEXT '{"type": "audio_input", "data": "LwAuACEAGgAVAA.../8v/n/+X/6P/n/+v/7v8="}' [2767 bytes]
+2025-08-11 13:51:12.042 - DEBUG - > TEXT '{"type": "audio_input", "data": "7f/v/+v/4f/d/9.../0v/a/+H/7P/1//j/+/8="}' [2767 bytes]
+2025-08-11 13:51:12.042 - DEBUG - > TEXT '{"type": "audio_input", "data": "+//4//r/+f/5//...AOwA4ADoAOQA6AD4AOgA="}' [2767 bytes]
+2025-08-11 13:51:12.072 - DEBUG - > TEXT '{"type": "audio_input", "data": "OAA5ADcAOQA5AD...ACQARABkAHwAkACQAJQA="}' [2767 bytes]
+2025-08-11 13:51:12.102 - DEBUG - > TEXT '{"type": "audio_input", "data": "JwAcABIADQAAAP.../tf+x/63/qv+o/6T/of8="}' [2767 bytes]
+2025-08-11 13:51:12.132 - DEBUG - > TEXT '{"type": "audio_input", "data": "pP+j/6f/sf+3/8...AIAAlACcAKAAqACwAKgA="}' [2767 bytes]
+2025-08-11 13:51:12.133 - DEBUG - > TEXT '{"type": "audio_input", "data": "KAAmAB8AGQAYAB.../1//b/+L/5v/o/+n/6v8="}' [2767 bytes]
+2025-08-11 13:51:12.161 - DEBUG - > TEXT '{"type": "audio_input", "data": "8P/0//X/+f/8//.../+P/9/wQADAANAAkACQA="}' [2767 bytes]
+2025-08-11 13:51:12.192 - DEBUG - > TEXT '{"type": "audio_input", "data": "CAAFAPz/7//k/9...AMwA2ADUALwAtACsAJgA="}' [2767 bytes]
+2025-08-11 13:51:12.222 - DEBUG - > TEXT '{"type": "audio_input", "data": "HAATABIADgAGAA.../wf/A/77/uP+4/7X/q/8="}' [2767 bytes]
+2025-08-11 13:51:12.252 - DEBUG - > TEXT '{"type": "audio_input", "data": "pv+n/6z/rv+w/7.../wv/J/87/z//R/9P/0/8="}' [2767 bytes]
+2025-08-11 13:51:12.252 - DEBUG - > TEXT '{"type": "audio_input", "data": "1f/a/9z/4P/n/+...ATgBNAEsASABFAEUAQwA="}' [2767 bytes]
+2025-08-11 13:51:12.282 - DEBUG - > TEXT '{"type": "audio_input", "data": "QQBBAEAAPwA/AD.../7v/y//b/9//5//3/+f8="}' [2767 bytes]
+2025-08-11 13:51:12.312 - DEBUG - > TEXT '{"type": "audio_input", "data": "9P/1//f/9//1//.../9f/y/+//8v/z//X/+P8="}' [2767 bytes]
+2025-08-11 13:51:12.342 - DEBUG - > TEXT '{"type": "audio_input", "data": "+P/3//H/5//l/+...AFgAYAB8AIAAiACcAMwA="}' [2767 bytes]
+2025-08-11 13:51:12.343 - DEBUG - > TEXT '{"type": "audio_input", "data": "PAA+AD4ANgAzAD.../2P/g/+v/+f////7/+v8="}' [2767 bytes]
+2025-08-11 13:51:12.372 - DEBUG - > TEXT '{"type": "audio_input", "data": "+f/3//X/8//s/+...////7//T/7P/a/8r/vv8="}' [2767 bytes]
+2025-08-11 13:51:12.401 - DEBUG - > TEXT '{"type": "audio_input", "data": "tP+w/67/qv+u/7.../4f/l/+n/6P/o//H//P8="}' [2767 bytes]
+2025-08-11 13:51:12.431 - DEBUG - > TEXT '{"type": "audio_input", "data": "BQAMAA4ADAAHAA.../9//w/+r/2//K/8b/xf8="}' [2767 bytes]
+2025-08-11 13:51:12.462 - DEBUG - > TEXT '{"type": "audio_input", "data": "xf/I/8X/wv/E/8...AEgASAB0ALgAuACoAJAA="}' [2767 bytes]
+2025-08-11 13:51:12.462 - DEBUG - > TEXT '{"type": "audio_input", "data": "HgAaAA8ADwAZAC...ADwAMAAsACgAKABEAFgA="}' [2767 bytes]
+2025-08-11 13:51:12.492 - DEBUG - > TEXT '{"type": "audio_input", "data": "FQAWABsAJQAtAC...ADwAOAA8ADAAGAAYACAA="}' [2767 bytes]
+2025-08-11 13:51:12.522 - DEBUG - > TEXT '{"type": "audio_input", "data": "CAAEAAcADQAMAA...AHwAkACUAJQAcABgAHAA="}' [2767 bytes]
+2025-08-11 13:51:12.552 - DEBUG - > TEXT '{"type": "audio_input", "data": "GgAfACAAHAAcAB...AMQAwAC0AKAAoACQAIAA="}' [2767 bytes]
+2025-08-11 13:51:12.553 - DEBUG - > TEXT '{"type": "audio_input", "data": "IAAdAB0AJAApAC...AUwBZAFoAWABTAE4ASAA="}' [2767 bytes]
+2025-08-11 13:51:12.582 - DEBUG - > TEXT '{"type": "audio_input", "data": "QwA7ADAAMAAwAC.../4P/j/+P/5//n/+r/7/8="}' [2767 bytes]
+2025-08-11 13:51:12.612 - DEBUG - > TEXT '{"type": "audio_input", "data": "8f/y//D/7v/x//.../1v/U/9b/2//X/9L/1P8="}' [2767 bytes]
+2025-08-11 13:51:12.642 - DEBUG - > TEXT '{"type": "audio_input", "data": "1//Z/93/3v/i/+...//P/9/wMAAwAIAAoABwA="}' [2767 bytes]
+2025-08-11 13:51:12.643 - DEBUG - > TEXT '{"type": "audio_input", "data": "CgAFAAAABAADAA...AKgAqACwAJwAoACsAKAA="}' [2767 bytes]
+2025-08-11 13:51:12.673 - DEBUG - > TEXT '{"type": "audio_input", "data": "KQAsADAAOwBCAE.../uf/B/8L/yf/R/9L/z/8="}' [2767 bytes]
+2025-08-11 13:51:12.703 - DEBUG - > TEXT '{"type": "audio_input", "data": "0f/R/9H/1P/X/9...ANwA0AC8ALAAqACUAJAA="}' [2767 bytes]
+2025-08-11 13:51:12.733 - DEBUG - > TEXT '{"type": "audio_input", "data": "JgAlACQALAAxAD.../4P/h/97/4f/m/+v/5f8="}' [2767 bytes]
+2025-08-11 13:51:12.763 - DEBUG - > TEXT '{"type": "audio_input", "data": "5v/v//L/8P/s//.../9//2//P/8f/u/+n/4/8="}' [2767 bytes]
+2025-08-11 13:51:12.763 - DEBUG - > TEXT '{"type": "audio_input", "data": "3v/e/+T/5//s/+...AEQAMAAcAAwD7//b/8f8="}' [2767 bytes]
+2025-08-11 13:51:12.793 - DEBUG - > TEXT '{"type": "audio_input", "data": "6f/h/9n/3v/p//.../z//U/9v/4P/e/97/3f8="}' [2767 bytes]
+2025-08-11 13:51:12.823 - DEBUG - > TEXT '{"type": "audio_input", "data": "2v/T/9H/0//I/7.../yv/K/8z/0P/O/8j/xP8="}' [2767 bytes]
+2025-08-11 13:51:12.853 - DEBUG - > TEXT '{"type": "audio_input", "data": "vP+6/7//uP+x/6...AHAAeAB8AIgAhACMAKgA="}' [2767 bytes]
+2025-08-11 13:51:12.854 - DEBUG - > TEXT '{"type": "audio_input", "data": "LwA1ADwAPQA2AD...AJQApACEAGgAXABYAFQA="}' [2767 bytes]
+2025-08-11 13:51:12.884 - DEBUG - > TEXT '{"type": "audio_input", "data": "EAAPABEAEwATAB.../xf/E/8b/zP/V/97/5v8="}' [2767 bytes]
+2025-08-11 13:51:12.914 - DEBUG - > TEXT '{"type": "audio_input", "data": "6v/r/+r/6f/p/+...AJQAgAB8AHwAaABwAHwA="}' [2767 bytes]
+2025-08-11 13:51:12.944 - DEBUG - > TEXT '{"type": "audio_input", "data": "IwAqACoALwA3AD.../6v/j/97/3//e/9v/2v8="}' [2767 bytes]
+2025-08-11 13:51:12.974 - DEBUG - > TEXT '{"type": "audio_input", "data": "2f/R/8n/yv/M/8.../3P/S/8X/uP+w/6f/mv8="}' [2767 bytes]
+2025-08-11 13:51:12.975 - DEBUG - > TEXT '{"type": "audio_input", "data": "k/+O/47/kP+T/5.../AgAGAA0ADgARABUAEgA="}' [2767 bytes]
+2025-08-11 13:51:13.004 - DEBUG - > TEXT '{"type": "audio_input", "data": "FAAfACIAKAAwAD.../7P/n/+f/6v/q/+z/9v8="}' [2767 bytes]
+2025-08-11 13:51:13.034 - DEBUG - > TEXT '{"type": "audio_input", "data": "+v/8//z//P////...AFwANAAYA/P/0/+//7v8="}' [2767 bytes]
+2025-08-11 13:51:13.064 - DEBUG - > TEXT '{"type": "audio_input", "data": "8f/v/+v/6P/n/+.../+f/3//f/9P/y/+//7/8="}' [2767 bytes]
+2025-08-11 13:51:13.065 - DEBUG - > TEXT '{"type": "audio_input", "data": "9//6//v/+f/3//.../9f/y//H/7f/n/+P/4P8="}' [2767 bytes]
+2025-08-11 13:51:13.095 - DEBUG - > TEXT '{"type": "audio_input", "data": "4v/j/+T/5f/m/+...AGAAYABgAIwApACkAMAA="}' [2767 bytes]
+2025-08-11 13:51:13.125 - DEBUG - > TEXT '{"type": "audio_input", "data": "MgA0ADUALgArAC...//f/8//j/9v/5//z///8="}' [2767 bytes]
+2025-08-11 13:51:13.155 - DEBUG - > TEXT '{"type": "audio_input", "data": "AwACAP///f8AAA...AGAAYABoAFgAMAAcABgA="}' [2767 bytes]
+2025-08-11 13:51:13.155 - DEBUG - > TEXT '{"type": "audio_input", "data": "BwAJAAQAAAACAP...AFwASABQAEAATABwAIQA="}' [2767 bytes]
+2025-08-11 13:51:13.185 - DEBUG - > TEXT '{"type": "audio_input", "data": "JQAmACgAKwArAC...A//8CAAEAAAAEAAQAAgA="}' [2767 bytes]
+2025-08-11 13:51:13.215 - DEBUG - > TEXT '{"type": "audio_input", "data": "BwAJAAgACAAGAA...ABgAKAA0ADQAOABMAGgA="}' [2767 bytes]
+2025-08-11 13:51:13.245 - DEBUG - > TEXT '{"type": "audio_input", "data": "HwAgAB4AIQAjAC...AFQAXAB0AHAAdACIAJQA="}' [2767 bytes]
+2025-08-11 13:51:13.275 - DEBUG - > TEXT '{"type": "audio_input", "data": "KQArACwAMgA1AD.../1v/U/9j/1f/R/9r/4P8="}' [2767 bytes]
+2025-08-11 13:51:13.276 - DEBUG - > TEXT '{"type": "audio_input", "data": "4//k/+L/5v/z//...ABgAGAP///P/8////AAA="}' [2767 bytes]
+2025-08-11 13:51:13.305 - DEBUG - > TEXT '{"type": "audio_input", "data": "+//5//X/9f/0//...AAAD6////AgAEAAgADQA="}' [2767 bytes]
+2025-08-11 13:51:13.336 - DEBUG - > TEXT '{"type": "audio_input", "data": "FQAWABQADwASAB.../3v/c/9v/2//f/+D/4P8="}' [2767 bytes]
+2025-08-11 13:51:13.366 - DEBUG - > TEXT '{"type": "audio_input", "data": "4//j/93/3P/Y/8...ANQA3ADoAPgA5ADAAJQA="}' [2767 bytes]
+2025-08-11 13:51:13.366 - DEBUG - > TEXT '{"type": "audio_input", "data": "GwASAAYA///5//.../zf/U/9z/5v/s/+r/6P8="}' [2767 bytes]
+2025-08-11 13:51:13.396 - DEBUG - > TEXT '{"type": "audio_input", "data": "4//f/9v/2P/W/9.../4//h/+T/5//o/+r/7f8="}' [2767 bytes]
+2025-08-11 13:51:13.426 - DEBUG - > TEXT '{"type": "audio_input", "data": "7//w/+3/6//p/+...AGgAUABcAGgAUABsAIwA="}' [2767 bytes]
+2025-08-11 13:51:13.456 - DEBUG - > TEXT '{"type": "audio_input", "data": "HwAkACkAKAAqAC.../5//u/+3/7f/w/+7/6/8="}' [2767 bytes]
+2025-08-11 13:51:13.457 - DEBUG - > TEXT '{"type": "audio_input", "data": "6P/l/93/1f/Q/8.../5P/p//f//v8LABIAEwA="}' [2767 bytes]
+2025-08-11 13:51:13.482 - DEBUG - > TEXT '{"type": "audio_input", "data": "GAAZABkAEwASAB...ADwAMAAYABwALAA0ADQA="}' [2767 bytes]
+2025-08-11 13:51:13.511 - DEBUG - > TEXT '{"type": "audio_input", "data": "DAAMAAwACwAMAB.../5f/s/+3/7//v/+z/6v8="}' [2767 bytes]
+2025-08-11 13:51:13.541 - DEBUG - > TEXT '{"type": "audio_input", "data": "5//p/+z/7P/x//...A/v///wcACQAKABAAEwA="}' [2767 bytes]
+2025-08-11 13:51:13.572 - DEBUG - > TEXT '{"type": "audio_input", "data": "FQAaAB0AHgAfAC...AHwAcABgAGwAhACUAKgA="}' [2767 bytes]
+2025-08-11 13:51:13.572 - DEBUG - > TEXT '{"type": "audio_input", "data": "LgA1AD8AQwA/AD.../5P/j/+P/5P/m/+L/4v8="}' [2767 bytes]
+2025-08-11 13:51:13.602 - DEBUG - > TEXT '{"type": "audio_input", "data": "5f/q//L/+P/8/w...ANQA+AD8AOwAvABYA8v8="}' [2767 bytes]
+2025-08-11 13:51:13.621 - DEBUG - = connection is CLOSING
+2025-08-11 13:51:13.621 - DEBUG - > CLOSE 1000 (OK) [2 bytes]
+2025-08-11 13:51:13.895 - DEBUG - < CLOSE 1000 (OK) [2 bytes]
+2025-08-11 13:51:14.897 - DEBUG - = connection is CLOSED
+Default input sample_rate: 44100
+Connected to WebSocket
+Received JSON message: {'type': 'chat_metadata', 'chat_group_id': 'b09d7d25-f3ec-4773-8eea-9ad6f4212f30', 'chat_id': '68db19de-da3c-4a6d-850e-9382c6a260a6', 'request_id': '41211c25-cd31-4a73-8036-d4915930d2e51017032'}
+Traceback (most recent call last):
+  File "/home/fhh/.pyenv/versions/3.11.9/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fhh/.pyenv/versions/3.11.9/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fhh/git/hume-api-examples/evi/evi-python-raw-api/src/main.py", line 73, in main
+    await Connection.connect(
+  File "/home/fhh/git/hume-api-examples/evi/evi-python-raw-api/src/connection.py", line 74, in connect
+    await asyncio.gather(receive_task, send_task)
+  File "/home/fhh/git/hume-api-examples/evi/evi-python-raw-api/src/connection.py", line 98, in _receive_audio_data
+    async for message in socket:
+  File "/home/fhh/git/hume-api-examples/evi/evi-python-raw-api/.venv/lib/python3.11/site-packages/websockets/legacy/protocol.py", line 498, in __aiter__
+    yield await self.recv()
+          ^^^^^^^^^^^^^^^^^
+  File "/home/fhh/git/hume-api-examples/evi/evi-python-raw-api/.venv/lib/python3.11/site-packages/websockets/legacy/protocol.py", line 552, in recv
+    await asyncio.wait(
+  File "/home/fhh/.pyenv/versions/3.11.9/lib/python3.11/asyncio/tasks.py", line 428, in wait
+    return await _wait(fs, timeout, return_when, loop)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fhh/.pyenv/versions/3.11.9/lib/python3.11/asyncio/tasks.py", line 535, in _wait
+    await waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fhh/git/hume-api-examples/evi/evi-python-raw-api/src/main.py", line 124, in <module>
+    asyncio.run(main())
+  File "/home/fhh/.pyenv/versions/3.11.9/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fhh/.pyenv/versions/3.11.9/lib/python3.11/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
