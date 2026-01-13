@@ -25,7 +25,7 @@ async def main() -> None:
     5. Calculate and display the top 3 emotions by average score.
     """
     # Replace with your actual Chat ID
-    CHAT_ID = "4d720063-d4ab-4407-ad22-e41079373d79"
+    CHAT_ID = "079b901e-3a96-4c55-acfa-275e842186ec"
 
     chat_events = await fetch_all_chat_events(CHAT_ID)
     transcript = generate_transcript(chat_events)
