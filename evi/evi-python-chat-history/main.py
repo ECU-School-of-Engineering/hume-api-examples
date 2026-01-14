@@ -25,9 +25,13 @@ async def main() -> None:
     5. Calculate and display the top 3 emotions by average score.
     """
     # Replace with your actual Chat ID
-    CHAT_ID = "079b901e-3a96-4c55-acfa-275e842186ec"
+    CHAT_ID = "066d82b8-1948-43f9-83d6-f8f82b6079bb"
 
     chat_events = await fetch_all_chat_events(CHAT_ID)
+    print("All events raw:",chat_events)
+    custom_session_id = extract_custom_session_id(chat_events)
+    print("session_id:", custom_session_id)
+
     transcript = generate_transcript(chat_events)
 
     # Write the transcript to a text file
@@ -84,6 +88,26 @@ def generate_transcript(chat_events: list[ReturnChatEvent]) -> str:
         lines.append(f"[{readable_time}] {role}: {event.message_text}")
 
     return "\n".join(lines)
+
+
+import json
+
+def extract_custom_session_id(chat_events):
+    """
+    Extracts custom_session_id from SESSION_SETTINGS events.
+    Handles message_text being a JSON string.
+    """
+    for event in chat_events:
+        if event.type == "SESSION_SETTINGS" and event.message_text:
+            try:
+                payload = json.loads(event.message_text)
+                return payload.get("custom_session_id")
+            except json.JSONDecodeError:
+                pass
+    return None
+
+
+
 
 def get_top_emotions(chat_events: list[ReturnChatEvent]) -> dict[str, float]:
     """
